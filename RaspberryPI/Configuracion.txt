@@ -1,0 +1,24 @@
+
+Habilitar servicios:
+sudo raspi-config
+En opciṕn 5 Interfacing options habilito ssh, etc.
+
+
+
+Poner IP Fija:
+
+sudo nano /etc/dhcpcd.conf
+
+luego tasksel e instalo el web server
+
+Instalar dyndns
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libio-socket-ssl-perl
+sudo apt-get install ddclient
+
+puedo editar los detalles de la cuenta en
+sudo nano /etc/ddclient.conf
+
+
+@reboot /home/pi/termometroweb.py
